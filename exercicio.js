@@ -1,11 +1,18 @@
 "use strict";
-class Valor {
-    constructor() {
-        this.valor = 4;
-    }
+function calcularArea(base, altura) {
+    return base * altura;
 }
-class Valor1 extends Valor {
-    depositar(valor) {
-        this.valor = valor * 2;
+const calcularArea1 = (base, altura) => base * altura; //mesmo código que o de cima só que mais simples
+function somar(...numeros) {
+    //numeros.reduce()
+    console.log(numeros);
+}
+class Pessoa {
+    constructor(nome, renda) {
+        this.nome = nome;
+        this.renda = renda;
+    }
+    dizOla() {
+        return `${this.nome} disse oiii`;
     }
 }
